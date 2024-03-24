@@ -1,11 +1,14 @@
 package softuni.exam.models.entity;
 
+import org.springframework.validation.annotation.Validated;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
 @Table (name = "borrowing_records")
+@Validated
 public class BorrowingRecord extends BaseEntity{
     @Column (name = "borrow_date", nullable = false)
     private LocalDate borrowDate;

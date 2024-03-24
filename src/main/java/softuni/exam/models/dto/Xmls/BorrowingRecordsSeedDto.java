@@ -2,6 +2,8 @@ package softuni.exam.models.dto.Xmls;
 
 import softuni.exam.util.LocalDateAdapter;
 
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -17,10 +19,12 @@ public class BorrowingRecordsSeedDto implements Serializable {
 
     @XmlElement(name = "borrow_date")
     @XmlJavaTypeAdapter(LocalDateAdapter.class)
+    @NotNull
     private LocalDate borrowDate;
 
     @XmlElement(name = "return_date")
     @XmlJavaTypeAdapter(LocalDateAdapter.class)
+
     private LocalDate returnDate;
 
     @XmlElement(name = "book")
@@ -31,9 +35,10 @@ public class BorrowingRecordsSeedDto implements Serializable {
 
     @XmlElement(name = "remarks")
     @Size (min = 3, max = 100)
+    @NotNull
     private String remarks;
 
-    public BorrowingRecordsSeedDto(BookDto book, MemberDto member) {
+    public BorrowingRecordsSeedDto(@Valid BookDto book, MemberDto member) {
         this.book = book;
         this.member = member;
     }

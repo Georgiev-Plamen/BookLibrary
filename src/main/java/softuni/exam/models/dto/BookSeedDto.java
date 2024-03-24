@@ -28,7 +28,7 @@ public class BookSeedDto implements Serializable {
 
     @Expose
     @Positive
-    private double rating;
+    private Double rating;
 
     public String getAuthor() {
         return author;

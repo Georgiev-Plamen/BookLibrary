@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14411a3d-ded0-4ba1-b696-09c28c42a3a6" name="Changes" comment="" />
+    <list default="true" id="14411a3d-ded0-4ba1-b696-09c28c42a3a6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e4a7cf5e-7f53-4238-a2ed-e438c31c4977.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e4a7cf5e-7f53-4238-a2ed-e438c31c4977.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/models/dto/BookSeedDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/models/dto/BookSeedDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/models/dto/Xmls/BorrowingRecordsSeedDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/models/dto/Xmls/BorrowingRecordsSeedDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/models/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/models/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/models/entity/BorrowingRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/models/entity/BorrowingRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/service/impl/BorrowingRecordsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/service/impl/BorrowingRecordsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/exam/models/dto/BookSeedDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/exam/models/dto/BookSeedDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/exam/models/dto/Xmls/BorrowingRecordsSeedDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/exam/models/dto/Xmls/BorrowingRecordsSeedDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/exam/models/entity/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/exam/models/entity/BaseEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/exam/service/impl/BorrowingRecordsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/exam/service/impl/BorrowingRecordsServiceImpl.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +33,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/LibraryManagement" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -29,82 +43,91 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.softuni.exam.areImported in exam.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.softuni.exam.database in exam.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.softuni.exam.export in exam.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.softuni.exam.import_Books in exam.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.softuni.exam.import_Borrowing_record in exam.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.softuni.exam.import_Library_members in exam.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ExamApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/T480s/IdeaProjects/GitHub/SpringExam/BookLibrary&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.TestImportBorrowingRecordsNullables004.executor": "Debug",
+    "JUnit.TestImportBorrowingRecordsZeroTest000.executor": "Run",
+    "JUnit.exam in exam.executor": "Run",
+    "JUnit.import_Borrowing_record in exam.executor": "Debug",
+    "JUnit.softuni.exam.areImported in exam.executor": "Run",
+    "JUnit.softuni.exam.database in exam.executor": "Run",
+    "JUnit.softuni.exam.export in exam.executor": "Debug",
+    "JUnit.softuni.exam.import_Books in exam.executor": "Run",
+    "JUnit.softuni.exam.import_Borrowing_record in exam.executor": "Debug",
+    "JUnit.softuni.exam.import_Library_members in exam.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ExamApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/T480s/IdeaProjects/GitHub/SpringExam/BookLibrary",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="softuni.exam.service.impl" />
       <recent name="softuni.exam.models.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.softuni.exam.export in exam">
-    <configuration name="softuni.exam.areImported in exam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.export in exam">
+    <configuration name="TestImportBorrowingRecordsNullables004" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exam" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="softuni.exam.areImported.*" />
+          <option name="PATTERN" value="softuni.exam.import_Borrowing_record.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="softuni.exam.areImported" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="softuni.exam.import_Borrowing_record" />
+      <option name="MAIN_CLASS_NAME" value="softuni.exam.import_Borrowing_record.TestImportBorrowingRecordsNullables004" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="softuni.exam.export in exam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestImportBorrowingRecordsZeroTest000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exam" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="softuni.exam.export.*" />
+          <option name="PATTERN" value="softuni.exam.import_Borrowing_record.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="softuni.exam.export" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="softuni.exam.import_Borrowing_record" />
+      <option name="MAIN_CLASS_NAME" value="softuni.exam.import_Borrowing_record.TestImportBorrowingRecordsZeroTest000" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="softuni.exam.import_Books in exam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="export in exam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="softuni.exam.import_Books.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="softuni.exam.import_Books" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/softuni/exam/export" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="import_Borrowing_record in exam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exam" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/softuni/exam/import_Borrowing_record" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,20 +146,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="softuni.exam.import_Library_members in exam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="exam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="softuni.exam.import_Library_members.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="softuni.exam.import_Library_members" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ExamApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="exam" />
@@ -147,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.softuni.exam.export in exam" />
+        <item itemvalue="JUnit.export in exam" />
+        <item itemvalue="JUnit.TestImportBorrowingRecordsNullables004" />
+        <item itemvalue="JUnit.import_Borrowing_record in exam" />
+        <item itemvalue="JUnit.TestImportBorrowingRecordsZeroTest000" />
         <item itemvalue="JUnit.softuni.exam.import_Borrowing_record in exam" />
-        <item itemvalue="JUnit.softuni.exam.import_Library_members in exam" />
-        <item itemvalue="JUnit.softuni.exam.import_Books in exam" />
-        <item itemvalue="JUnit.softuni.exam.areImported in exam" />
       </list>
     </recent_temporary>
   </component>
@@ -173,11 +182,29 @@
       <workItem from="1711127801437" duration="18453000" />
       <workItem from="1711270133853" duration="5259000" />
       <workItem from="1711276298559" duration="10000" />
-      <workItem from="1711276338098" duration="1077000" />
+      <workItem from="1711276338098" duration="6590000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/softuni/exam/service/impl/BorrowingRecordsServiceImpl.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="this.libraryMemberRepository" language="JAVA" />
+        <watch expression="optionalLibraryMember" />
+        <watch expression="optionalBook" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

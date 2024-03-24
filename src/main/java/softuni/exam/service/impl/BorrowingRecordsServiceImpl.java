@@ -7,6 +7,7 @@ import softuni.exam.models.dto.Xmls.BorrowingRecordsRootDto;
 import softuni.exam.models.dto.Xmls.BorrowingRecordsSeedDto;
 import softuni.exam.models.entity.Book;
 import softuni.exam.models.entity.BorrowingRecord;
+import softuni.exam.models.entity.Genre;
 import softuni.exam.models.entity.LibraryMember;
 import softuni.exam.repository.BookRepository;
 import softuni.exam.repository.BorrowingRecordRepository;
@@ -14,6 +15,7 @@ import softuni.exam.repository.LibraryMemberRepository;
 import softuni.exam.service.BorrowingRecordsService;
 import softuni.exam.util.ValidationUtil;
 
+import javax.validation.Valid;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
@@ -37,7 +39,7 @@ public class BorrowingRecordsServiceImpl implements BorrowingRecordsService {
     private final ValidationUtil validationUtil;
     private final ModelMapper modelMapper;
 
-    public BorrowingRecordsServiceImpl(BorrowingRecordRepository borrowingRecordRepository, BookRepository bookRepository, LibraryMemberRepository libraryMemberRepository, ValidationUtil validationUtil, ModelMapper modelMapper) {
+    public BorrowingRecordsServiceImpl(@Valid BorrowingRecordRepository borrowingRecordRepository, BookRepository bookRepository, LibraryMemberRepository libraryMemberRepository, ValidationUtil validationUtil, ModelMapper modelMapper) {
         this.borrowingRecordRepository = borrowingRecordRepository;
         this.bookRepository = bookRepository;
         this.libraryMemberRepository = libraryMemberRepository;
@@ -70,7 +72,8 @@ public class BorrowingRecordsServiceImpl implements BorrowingRecordsService {
             Optional<Book> optionalBook = this.bookRepository.findByTitle(borrowingRecordsSeedDto.getBook().getTitle());
             Optional<LibraryMember> optionalLibraryMember = this.libraryMemberRepository.findById(borrowingRecordsSeedDto.getMember().getId());
 
-            if(!this.validationUtil.isValid(borrowingRecordsSeedDto) || optionalBook.isEmpty() || optionalLibraryMember.isEmpty()) {
+            if(!this.validationUtil.isValid(borrowingRecordsSeedDto) || optionalBook.isEmpty() || optionalLibraryMember.isEmpty()
+            || !this.validationUtil.isValid(optionalBook) || !this.validationUtil.isValid(optionalLibraryMember)) {
                 sb.append("Invalid borrowing record\n");
                 continue;
             }
@@ -79,9 +82,14 @@ public class BorrowingRecordsServiceImpl implements BorrowingRecordsService {
             borrowingRecord.setBook(optionalBook.get());
             borrowingRecord.setMember(optionalLibraryMember.get());
 
-            this.borrowingRecordRepository.saveAndFlush(borrowingRecord);
+            if(borrowingRecord.getBorrowDate() == null || borrowingRecord.getRemarks() == null || borrowingRecord.getReturnDate() == null) {
+                sb.append("Invalid borrowing record\n");
+                continue;
+            } else {
+                this.borrowingRecordRepository.saveAndFlush(borrowingRecord);
+                sb.append(String.format("Successfully imported borrowing record %s - %s\n", borrowingRecord.getBook().getTitle(), borrowingRecordsSeedDto.getBorrowDate()));
+            }
 
-            sb.append(String.format("Successfully imported borrowing record %s - %s\n", borrowingRecord.getBook().getTitle(), borrowingRecordsSeedDto.getBorrowDate()));
         }
 
         return sb.toString();
@@ -90,7 +98,7 @@ public class BorrowingRecordsServiceImpl implements BorrowingRecordsService {
     @Override
     public String exportBorrowingRecords() {
 
-        return this.borrowingRecordRepository.findAllBorrowingRecordsByBorrowDateBefore(LocalDate.parse("2021-09-10"))
+        return this.borrowingRecordRepository.findAllBorrowingRecordsByBorrowDateBeforeAndBookGenreIsOrderByBorrowDateDesc(LocalDate.parse("2021-09-10"), Genre.SCIENCE_FICTION)
                 .stream().map(b ->
                 String.format("Book title: %s\n" +
                         "*Book author: %s\n" +
