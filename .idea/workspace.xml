@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14411a3d-ded0-4ba1-b696-09c28c42a3a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e4a7cf5e-7f53-4238-a2ed-e438c31c4977.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e4a7cf5e-7f53-4238-a2ed-e438c31c4977.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/models/dto/BookSeedDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/models/dto/BookSeedDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/config/ApplicationBeanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/config/ApplicationBeanConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/models/dto/LibrarySeedDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/models/dto/LibrarySeedDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/models/dto/Xmls/BorrowingRecordsSeedDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/models/dto/Xmls/BorrowingRecordsSeedDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/models/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/models/entity/BaseEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/models/entity/BorrowingRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/models/entity/BorrowingRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/service/impl/BorrowingRecordsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/service/impl/BorrowingRecordsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/softuni/exam/models/dto/BookSeedDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/exam/models/dto/BookSeedDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/softuni/exam/models/dto/Xmls/BorrowingRecordsSeedDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/exam/models/dto/Xmls/BorrowingRecordsSeedDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/softuni/exam/models/entity/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/exam/models/entity/BaseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/softuni/exam/service/impl/BorrowingRecordsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/exam/service/impl/BorrowingRecordsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softuni/exam/service/impl/LibraryMemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softuni/exam/service/impl/LibraryMemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softuni/exam/service/impl/LibraryMemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softuni/exam/service/impl/LibraryMemberServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,10 +39,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JUnit.TestImportBorrowingRecordsNullables004.executor": "Debug",
+    "JUnit.TestImportBorrowingRecordsNullables004.executor": "Run",
     "JUnit.TestImportBorrowingRecordsZeroTest000.executor": "Run",
+    "JUnit.TestImportLibraryMembersZeroTest000.executor": "Run",
     "JUnit.exam in exam.executor": "Run",
-    "JUnit.import_Borrowing_record in exam.executor": "Debug",
+    "JUnit.export in exam.executor": "Run",
+    "JUnit.import_Books in exam.executor": "Run",
+    "JUnit.import_Borrowing_record in exam.executor": "Run",
+    "JUnit.import_Library_members in exam.executor": "Run",
     "JUnit.softuni.exam.areImported in exam.executor": "Run",
     "JUnit.softuni.exam.database in exam.executor": "Run",
     "JUnit.softuni.exam.export in exam.executor": "Debug",
@@ -65,7 +63,7 @@
     "Spring Boot.ExamApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/T480s/IdeaProjects/GitHub/SpringExam/BookLibrary",
+    "last_opened_file_path": "C:/Users/T480s/Desktop/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -85,7 +83,7 @@
       <recent name="softuni.exam.models.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.export in exam">
+  <component name="RunManager" selected="JUnit.TestImportBorrowingRecordsNullables004">
     <configuration name="TestImportBorrowingRecordsNullables004" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exam" />
       <extension name="coverage">
@@ -97,29 +95,31 @@
       <option name="PACKAGE_NAME" value="softuni.exam.import_Borrowing_record" />
       <option name="MAIN_CLASS_NAME" value="softuni.exam.import_Borrowing_record.TestImportBorrowingRecordsNullables004" />
       <option name="TEST_OBJECT" value="class" />
+      <dir value="$PROJECT_DIR$/src/test/java/softuni/exam/import_Borrowing_record" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestImportBorrowingRecordsZeroTest000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestImportLibraryMembersZeroTest000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exam" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="softuni.exam.import_Borrowing_record.*" />
+          <option name="PATTERN" value="softuni.exam.import_Library_members.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="softuni.exam.import_Borrowing_record" />
-      <option name="MAIN_CLASS_NAME" value="softuni.exam.import_Borrowing_record.TestImportBorrowingRecordsZeroTest000" />
+      <option name="PACKAGE_NAME" value="softuni.exam.import_Library_members" />
+      <option name="MAIN_CLASS_NAME" value="softuni.exam.import_Library_members.TestImportLibraryMembersZeroTest000" />
       <option name="TEST_OBJECT" value="class" />
+      <dir value="$PROJECT_DIR$/src/test/java/softuni/exam/import_Library_members" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="export in exam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="import_Books in exam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exam" />
       <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/softuni/exam/export" />
+      <dir value="$PROJECT_DIR$/src/test/java/softuni/exam/import_Books" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,16 +132,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="softuni.exam.import_Borrowing_record in exam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="import_Library_members in exam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="softuni.exam.import_Borrowing_record.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="softuni.exam.import_Borrowing_record" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/softuni/exam/import_Library_members" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.export in exam" />
         <item itemvalue="JUnit.TestImportBorrowingRecordsNullables004" />
         <item itemvalue="JUnit.import_Borrowing_record in exam" />
-        <item itemvalue="JUnit.TestImportBorrowingRecordsZeroTest000" />
-        <item itemvalue="JUnit.softuni.exam.import_Borrowing_record in exam" />
+        <item itemvalue="JUnit.import_Library_members in exam" />
+        <item itemvalue="JUnit.TestImportLibraryMembersZeroTest000" />
+        <item itemvalue="JUnit.import_Books in exam" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +176,7 @@
       <workItem from="1711127801437" duration="18453000" />
       <workItem from="1711270133853" duration="5259000" />
       <workItem from="1711276298559" duration="10000" />
-      <workItem from="1711276338098" duration="6590000" />
+      <workItem from="1711276338098" duration="8804000" />
     </task>
     <servers />
   </component>
@@ -194,8 +188,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/softuni/exam/service/impl/BorrowingRecordsServiceImpl.java</url>
-          <line>81</line>
+          <line>82</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/softuni/exam/service/impl/LibraryMemberServiceImpl.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

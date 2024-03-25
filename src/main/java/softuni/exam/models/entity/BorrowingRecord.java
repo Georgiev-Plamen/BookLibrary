@@ -3,6 +3,7 @@ package softuni.exam.models.entity;
 import org.springframework.validation.annotation.Validated;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.util.Set;
 
@@ -33,6 +34,7 @@ public class BorrowingRecord extends BaseEntity{
         this.borrowDate = borrowDate;
     }
 
+
     public String getRemarks() {
         return remarks;
     }
@@ -41,6 +43,7 @@ public class BorrowingRecord extends BaseEntity{
         this.remarks = remarks;
     }
 
+
     public LocalDate getReturnDate() {
         return returnDate;
     }
@@ -48,6 +51,7 @@ public class BorrowingRecord extends BaseEntity{
     public void setReturnDate(LocalDate returnDate) {
         this.returnDate = returnDate;
     }
+
 
     public Book getBook() {
         return book;

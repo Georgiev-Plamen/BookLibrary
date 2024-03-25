@@ -24,13 +24,15 @@ public class BorrowingRecordsSeedDto implements Serializable {
 
     @XmlElement(name = "return_date")
     @XmlJavaTypeAdapter(LocalDateAdapter.class)
-
+    @NotNull
     private LocalDate returnDate;
 
     @XmlElement(name = "book")
+    @NotNull
     private BookDto book;
 
     @XmlElement(name = "member")
+    @NotNull
     private MemberDto member;
 
     @XmlElement(name = "remarks")
@@ -38,7 +40,7 @@ public class BorrowingRecordsSeedDto implements Serializable {
     @NotNull
     private String remarks;
 
-    public BorrowingRecordsSeedDto(@Valid BookDto book, MemberDto member) {
+    public BorrowingRecordsSeedDto(BookDto book, MemberDto member) {
         this.book = book;
         this.member = member;
     }
@@ -62,6 +64,7 @@ public class BorrowingRecordsSeedDto implements Serializable {
         this.returnDate = returnDate;
     }
 
+
     public BookDto getBook() {
         return book;
     }
@@ -69,6 +72,7 @@ public class BorrowingRecordsSeedDto implements Serializable {
     public void setBook(BookDto book) {
         this.book = book;
     }
+
 
     public MemberDto getMember() {
         return member;

@@ -63,7 +63,8 @@ public class LibraryMemberServiceImpl implements LibraryMemberService {
 
             LibraryMember libraryMember = this.modelMapper.map(librarySeedDto, LibraryMember.class);
 
-            this.libraryMemberRepository.saveAndFlush(libraryMember);
+
+                this.libraryMemberRepository.saveAndFlush(libraryMember);
 
             sb.append(String.format("Successfully imported library member %s - %s\n",
                     libraryMember.getFirstName(), libraryMember.getLastName()));

@@ -4,6 +4,7 @@ import com.google.gson.annotations.Expose;
 import org.springframework.lang.NonNull;
 
 import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 
@@ -15,14 +16,17 @@ public class LibrarySeedDto implements Serializable {
 
     @Expose
     @Size(min = 2, max = 30)
+    @NotNull
     private String firstName;
 
     @Expose
     @Size(min = 2, max = 30)
+    @NotNull
     private String lastName;
 
     @Expose
     @Size(min = 2, max = 20)
+    @NotNull
     private String phoneNumber;
 
     public String getAddress() {
